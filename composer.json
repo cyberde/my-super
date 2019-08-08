@@ -1,7 +1,7 @@
 {
     "type": "symfony-bundle",
-    "name": "cyberde/my-super-bundle",
-    "description": "My test task bundle",
+    "name": "cyberde/arithmetic-bundle",
+    "description": "arithmetic bundle",
     "license": "proprietary",
     "require": {
         "php": "^7.1.3",
@@ -23,12 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "cyberde\\MySuperBundle\\": "src/"
+            "cyberde\\ArithmeticBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "cyberde\\MySuperBundle\\Tests\\": "tests/"
+            "cyberde\\ArithmeticBundle\\Tests\\": "tests/"
         }
     },
     "conflict": {

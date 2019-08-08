@@ -2,9 +2,9 @@
 
 namespace cyberde\Service;
 
-use cyberde\MySuperBundle\Service\MathInterface;
+use cyberde\ArithmeticBundle\Service\ArithmeticInterface;
 
-class SimpleMath implements MathInterface
+class SimpleArithmetic implements ArithmeticInterface
 {
   public function performTask(): string
   {
