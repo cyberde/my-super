@@ -1,20 +1,19 @@
 <?php
 
-namespace cyberde\Controller;
+namespace cyberde\ArithmeticBundle\Controller;
 
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
 
-class ArithmeticController
+class ArithmeticController extends AbstractController
 {
   /**
-   * @Route("/arithmetic/math/{method}/{expression}", name="cyberde_arithmetic")
+   * @Route("/arithmetic/perform/{expression}", methods={"GET"}, name="cyberde_arithmetic")
    */
 
-  public function math($method, $expression)
+  public function perform($expression): JsonResponse
   {
-    return new Response(
-      '<html><body>method: '.$method.' expression: '.$expression.'</body></html>'
-    );
+    return $this->json(["result" => eval($expression)]);
   }
 }

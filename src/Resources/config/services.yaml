@@ -1,0 +1,3 @@
+services:
+  devmk\ArithmeticBundle\Controller\ArithmeticController:
+    autoconfigure: true
