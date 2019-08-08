@@ -1,0 +1,3 @@
+services:
+  cyberde\MySuperBundle\Controller\MySuperController:
+    autoconfigure: true
