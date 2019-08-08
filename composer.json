@@ -1,0 +1,22 @@
+{
+    "name": "cyberde/arithmetic",
+    "description": "arithmetic bundle",
+    "type": "symfony-bundle",
+    "require": {
+        "php": "7.3.7",
+        "symfony/framework-bundle": "4.3.3"
+    },
+    "license": "free",
+    "authors": [
+        {
+            "name": "cyberde",
+            "email": "megatau@gmail.com"
+        }
+    ],
+	"autoload": {
+		"psr-4": {
+		  "cyberde\\ArithmeticBundle\\": "src"
+		}
+	},
+    "minimum-stability": "dev"
+}
